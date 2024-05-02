@@ -10,6 +10,55 @@
 </head>
 
 <body>
+    <header>
+        <div class="container mt-4">
+            <h1>Nuovo Libro</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form action="destination.html" method="post">
+                <div class="row g-3">
+                    <div class="col">
+                        <label for="formGroupExampleInput" class="form-label">Nome autore</label>
+                        <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore">
+                    </div>
+                    <div class="col">
+                        <label for="formGroupExampleInput" class="form-label">Cognome autore</label>
+                        <input type="text" class="form-control" placeholder="Inserisci il cognome dell'autore">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput"
+                        placeholder="Inserisci titolo del libro">
+                    <div id="emailHelp" class="form-text">Titolo versione italiana</div>
+                </div>
+                <div class="row g-3">
+                    <div class="col">
+                        <label for="formGroupExampleInput" class="form-label">Nome autore</label>
+                        <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore">
+                    </div>
+                    <div class="col">
+                        <label for="formGroupExampleInput" class="form-label">Anno di pubblicazione</label>
+                        <input type="text" class="form-control" placeholder="Inserisci l'anno">
+                    </div>
+                    <div class="col">
+                        <label for="formGroupExampleInput" class="form-label">ISBN#</label>
+                        <input type="text" class="form-control" placeholder="inserisci il codice ISBN#">
+                    </div>
+                </div>
+
+
+                <hr class="mt-4 mb-4">
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Disponibile anche in digitale</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+            </form>
+        </div>
+    </main>
 
     <!--js link-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
