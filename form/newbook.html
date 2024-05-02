@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <div class="container mt-4">
+        <div class="container mt-4 mb-4">
             <h1>Nuovo Libro</h1>
         </div>
     </header>
@@ -20,37 +20,45 @@
             <form action="destination.html" method="post">
                 <div class="row g-3">
                     <div class="col">
-                        <label for="formGroupExampleInput" class="form-label">Nome autore</label>
+                        <label for="formGroupExampleInput" class="form-label fw-bold">Nome Autore</label>
                         <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore">
                     </div>
                     <div class="col">
-                        <label for="formGroupExampleInput" class="form-label">Cognome autore</label>
+                        <label for="formGroupExampleInput" class="form-label fw-bold">Cognome Autore</label>
                         <input type="text" class="form-control" placeholder="Inserisci il cognome dell'autore">
                     </div>
                 </div>
-                <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label">Titolo</label>
+                <div class="mb-3 mt-3">
+                    <label for="formGroupExampleInput" class="form-label fw-bold">Titolo</label>
                     <input type="text" class="form-control" id="formGroupExampleInput"
                         placeholder="Inserisci titolo del libro">
                     <div id="emailHelp" class="form-text">Titolo versione italiana</div>
                 </div>
                 <div class="row g-3">
                     <div class="col">
-                        <label for="formGroupExampleInput" class="form-label">Nome autore</label>
-                        <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore">
+                        <label for="formGroupExampleInput" class="form-label fw-bold">Genere</label>
+                        <select class="form-select">
+                            <option selected>Scegli il genere</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
                     </div>
                     <div class="col">
-                        <label for="formGroupExampleInput" class="form-label">Anno di pubblicazione</label>
+                        <label for="formGroupExampleInput" class="form-label fw-bold">Anno di pubblicazione</label>
                         <input type="text" class="form-control" placeholder="Inserisci l'anno">
                     </div>
                     <div class="col">
-                        <label for="formGroupExampleInput" class="form-label">ISBN#</label>
-                        <input type="text" class="form-control" placeholder="inserisci il codice ISBN#">
+                        <label for="formGroupExampleInput" class="form-label fw-bold">ISBN#</label>
+                        <input type="text" class="form-control" placeholder="Inserisci il codice ISBN#">
                     </div>
                 </div>
-
-
                 <hr class="mt-4 mb-4">
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label fw-bold">Note</label>
+                    <textarea class="form-control" placeholder="Inserisci eventuali note sul libro"
+                        id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Disponibile anche in digitale</label>
